@@ -1,0 +1,9 @@
+# generate files
+http_logs.ndjson
+http_logs.ndjson.gz
+http_logs.csv
+http_logs.parquet
+http_logs.duckdb
+
+
+node_modules
