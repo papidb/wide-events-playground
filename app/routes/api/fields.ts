@@ -7,7 +7,7 @@ import {
 import getDatabase from "../../../src/db";
 
 export const Route = createAPIFileRoute("/api/fields")({
-  GET: async ({ request, params }) => {
+  GET: async () => {
     const db = await getDatabase();
     const tables = (
       await db.all(
