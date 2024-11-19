@@ -8,7 +8,7 @@ import { compress } from "hono/compress";
 import { html, raw } from "hono/html";
 import { groupByTableName, transformRowDataToFieldData } from "./data";
 import setupConnection from "./db";
-import { Hello } from "./pages/home";
+import { App } from "./pages/home";
 
 // hacky fix for bigInt
 // https://github.com/GoogleChromeLabs/jsbi/issues/30#issuecomment-953187833
@@ -37,7 +37,7 @@ const cssFile = isProd
 app.use("/assets/*", serveStatic({ root: "./dist" }));
 
 app.get("/", (c) => {
-  const content = jsx(Hello, {}); // <-- HERE IS our JSX content
+  const content = jsx(App, {}); // <-- HERE IS our JSX content
   return c.html(html`
     <!DOCTYPE html>
     <html lang="en">

@@ -1,4 +1,4 @@
-export function Hello() {
+export function App() {
   return (
     <div class="text-2xl text-red-600 grid h-[100dvh] items-center justify-center text-center">
       <div>
