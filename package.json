@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "generate-data": "node generate-data.js 100000"
   },
   "dependencies": {
     "@faker-js/faker": "^9.2.0",
