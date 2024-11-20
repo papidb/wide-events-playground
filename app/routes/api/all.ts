@@ -1,6 +1,6 @@
 import { json } from '@tanstack/start'
 import { createAPIFileRoute } from '@tanstack/start/api'
-import getDatabase from '../../../src/db'
+import getDatabase from '../../utils/db'
 
 export const Route = createAPIFileRoute('/api/all')({
   GET: async ({ request, params }) => {

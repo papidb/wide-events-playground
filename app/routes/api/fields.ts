@@ -3,8 +3,8 @@ import { createAPIFileRoute } from "@tanstack/start/api";
 import {
   groupByTableName,
   transformRowDataToFieldData,
-} from "../../../src/data";
-import getDatabase from "../../../src/db";
+} from "../../utils/data";
+import getDatabase from "../../utils/db";
 
 export const Route = createAPIFileRoute("/api/fields")({
   GET: async () => {

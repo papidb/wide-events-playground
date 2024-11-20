@@ -44,3 +44,7 @@ lerna-debug.log*
 
 
 routeTree.gen.ts
+
+
+.vercel/
+.vinxi
