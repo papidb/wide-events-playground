@@ -41,3 +41,10 @@ lerna-debug.log*
 
 # misc
 .DS_Store
+
+
+routeTree.gen.ts
+
+
+.vercel/
+.vinxi

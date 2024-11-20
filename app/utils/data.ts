@@ -31,15 +31,17 @@ export function transformRowDataToFieldData(rowData: RowData): FieldData {
   };
 }
 
-export function groupByTableName(rows: RowData[]) {
-  const groupedRows = rows.reduce((acc, row) => {
-    const tableName = row.table_name;
-    if (!acc[tableName]) {
-      acc[tableName] = [];
-    }
-    acc[tableName].push(row);
-    return acc;
-  }, {} as Record<string, RowData[]>);
-
+export function groupByTableName(rows: RowData[]): Record<string, RowData[]> {
+  const groupedRows = rows.reduce(
+    (acc, row) => {
+      const tableName = row.table_name;
+      if (!acc[tableName]) {
+        acc[tableName] = [];
+      }
+      acc[tableName].push(row);
+      return acc;
+    },
+    {} as Record<string, RowData[]>
+  );
   return groupedRows;
 }
