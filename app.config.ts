@@ -3,10 +3,13 @@ import { defineConfig } from "@tanstack/start/config";
 import viteTsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  server: {
+    preset: "vercel",
+  },
   vite: {
     plugins: [
       // this is the plugin that enables path aliases
-      // @ts-expect-error 
+      // @ts-expect-error
       viteTsConfigPaths({
         projects: ["./tsconfig.json"],
       }),
