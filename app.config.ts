@@ -8,8 +8,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      // this is the plugin that enables path aliases
-      // @ts-expect-error
+      // @ts-expect-error this fails for some reason
       viteTsConfigPaths({
         projects: ["./tsconfig.json"],
       }),
