@@ -1,9 +1,9 @@
 // https://github.com/jmorrell/a-practitioners-guide-to-wide-events/blob/main/column-storage-compression/index.js
 
-const fs = require("fs");
-const { faker } = require("@faker-js/faker");
-const duckdb = require("duckdb");
-const zlib = require("zlib");
+import fs from "fs";
+import { faker } from "@faker-js/faker";
+import duckdb from "duckdb";
+import zlib from "zlib";
 
 // Parse command line arguments
 const numberOfRecords = parseInt(process.argv[2]);
