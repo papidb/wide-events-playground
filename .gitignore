@@ -47,4 +47,5 @@ routeTree.gen.ts
 
 
 .vercel/
-.vinxi
+.vinxi/
+.output/
